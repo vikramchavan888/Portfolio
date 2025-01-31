@@ -4,7 +4,7 @@ import { monaSans } from "../fonts/monaSans";
 import { motion } from "framer-motion";
 import { imageAnimation, bodyAnimation } from "../animations/animations";
 import AnimatedWords from "../animations/AnimatedWords";
-import profile from "../../public/profile.webp";
+import profile from "../../public/profile.jpg";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="absolute top-10 flex justify-between sm:w-[90%] lg:max-w-[1440px]">
         <div>
           <Link
-            href="https://cal.com/victorwilliams/30min"
+            href="https://cal.com/vikram-chavan-tc9tc4/30min"
             target="_blank"
             aria-label="BOOK A CALL"
           >
@@ -42,7 +42,7 @@ const Hero = () => {
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               variants={bodyAnimation}
             >
-              GH
+              Github
             </motion.p>
           </Link>
           <Link
@@ -54,11 +54,11 @@ const Hero = () => {
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               variants={bodyAnimation}
             >
-              LN
+              LinkedIn
             </motion.p>
           </Link>
           <Link
-            href="https://twitter.com/victorwill__"
+            href="mailto:vikramchavan696@gmail.com"
             target="_blank"
             aria-label="View Twitter Profile"
           >
@@ -66,19 +66,7 @@ const Hero = () => {
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               variants={bodyAnimation}
             >
-              TW
-            </motion.p>
-          </Link>
-          <Link
-            href="https://contra.com/victorwilliams"
-            target="_blank"
-            aria-label="View Contra Profile"
-          >
-            <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
-              variants={bodyAnimation}
-            >
-              CO
+             Email
             </motion.p>
           </Link>
         </div>
@@ -89,7 +77,7 @@ const Hero = () => {
           className={`relative flex flex-col items-center justify-center ${monaSans.className}`}
         >
           <AnimatedWords
-            title="VICTOR WILLIAMS"
+            title="VIKRAM CHOUHAN"
             style="inline-block overflow-hidden pt-1 -mr-4 sm:-mr-5 md:-mr-7 lg:-mr-9 -mb-1 sm:-mb-2 md:-mb-3 lg:-mb-4"
           />
           <motion.div
@@ -99,8 +87,8 @@ const Hero = () => {
             <Image
               src={profile}
               priority
-              alt="Victor's headshot"
-              data-blobity-tooltip="Giga Chad"
+              alt="Vikram's headshot"
+              data-blobity-tooltip="console.log"
               data-blobity-invert="false"
               className=" w-[150px] rounded-[16px] grayscale hover:grayscale-0 md:w-[200px] md:rounded-[32px] lg:w-[245px]"
             />
@@ -118,16 +106,7 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
-            Frontend Engineer and Web Designer, prev at{" "}
-            <Link
-              href="https://www.korahq.com/"
-              target="_blank"
-              className="underline underline-offset-2 hover:no-underline"
-              aria-label="Kora Website"
-            >
-              Kora,
-            </Link>{" "}
-            currently available for work.
+            Fullstack Developer and Web Designer currently available for work.
           </p>
         </motion.div>
 
@@ -136,8 +115,7 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
-            Focused on interfaces and experiences, working remotely from Lagos,
-            Nigeria.
+            Focused on interfaces and experiences, currenty working from pune
           </p>
         </motion.div>
       </div>

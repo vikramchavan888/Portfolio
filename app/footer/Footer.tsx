@@ -19,13 +19,13 @@ const Footer = () => {
             className={"m-0 p-0"}
           />
           <Link
-            href="https://github.com/victorcodess"
+            href="https://github.com/vikramchavan888"
             target="_blank"
-            aria-label="Victor's GitHub Profile"
+            aria-label="Vikram's GitHub Profile"
           >
             <span className="underline underline-offset-2 hover:no-underline">
-              <AnimatedBody text={"Victor Williams"} className={"m-0 p-0"} />
-            </span>{" "}
+              <AnimatedBody text={"VIKRAM CHOUHAN"} className={"m-0 p-0"} />
+            </span>
           </Link>
         </div>
       </motion.div>

@@ -11,9 +11,7 @@ const About = () => {
     >
       <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
         <AnimatedTitle
-          text={
-            "I MAKE BRANDS BEAUTIFUL, WEBSITES POWERFUL AND CONTENT CAPTIVATING."
-          }
+          text={"WHO I AM ?"}
           className={
             "mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
           }
@@ -36,13 +34,7 @@ const About = () => {
             />
             <AnimatedBody
               text={
-                "Beyond my work as a frontend developer, I'm an active leader in tech communities on campus. As a member of the Google Developer Student Clubs and Microsoft Learn Student Ambassadors, I've led workshops and mentored other students."
-              }
-            />
-            <AnimatedBody
-              text={
-                "When I'm not coding, you can find me binge-watching anime, hanging out with friends, cheering on Manchester United, or discovering new music in my favorite genres like RnB, UK Drill, and Chill Rap."
-              }
+                "When I'm not coding, you can find me hanging out with stock charts "}
             />
             <AnimatedBody
               text={
@@ -54,37 +46,51 @@ const About = () => {
           <div className="mb-24 flex w-[100%] flex-col gap-4 text-[18px] font-normal leading-relaxed tracking-wide text-[#e4ded7]/80 sm:mb-32 md:mb-40 md:gap-6 md:text-[16px] md:leading-normal lg:mt-0 lg:mb-16 lg:max-w-[30%] lg:text-[18px]">
             <div className="flex flex-col gap-4 md:gap-3">
               <AnimatedTitle
-                text={"Frontend Tools"}
+                text={"Languages"}
                 className={
                   "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
                 }
                 wordSpace={"mr-[0.25em]"}
                 charSpace={"mr-[0.01em]"}
               />
-              <AnimatedBody
-                text={
-                  "JavaScript (ES6+), React, Next.js, TypeScript, Prismic CMS, Redux, Redux Toolkit, React Testing Library, Vitetest, HTML5, Git/GitHub, NextAuth, Formik."
-                }
-              />
+              <AnimatedBody text={"C++, JAVA, JavaScript, Python,Web3,.NET"} />
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-4 md:gap-3">
               <AnimatedTitle
-                text={"UI Libraries"}
+                text={"Frameworks"}
                 className={
                   "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
                 }
                 wordSpace={"mr-[0.25em]"}
                 charSpace={"mr-[0.01em]"}
               />
-              <AnimatedBody
-                text={
-                  "CSS3/SCSS/SASS, Tailwind CSS, Material UI, Framer Motion, GSAP, Bootstrap, Chart.js."
-                }
-              />
+              <AnimatedBody text={"Spring, Angular, React, NodeJs Flask"} />
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-4 md:gap-3">
               <AnimatedTitle
-                text={"Design Tools"}
+                text={"Database"}
+                className={
+                  "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
+                }
+                wordSpace={"mr-[0.25em]"}
+                charSpace={"mr-[0.01em]"}
+              />
+              <AnimatedBody text={"MongoDB, Firebase, MySQL"} />
+            </div>
+            <div className="flex flex-col gap-4 md:gap-3">
+              <AnimatedTitle
+                text={"Platforms"}
+                className={
+                  "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
+                }
+                wordSpace={"mr-[0.25em]"}
+                charSpace={"mr-[0.01em]"}
+              />
+              <AnimatedBody text={"Linux, Web, Windows, AWS"} />
+            </div>
+            <div className="flex flex-col gap-4 md:gap-3">
+              <AnimatedTitle
+                text={"Tools"}
                 className={
                   "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
                 }
@@ -93,7 +99,7 @@ const About = () => {
               />
               <AnimatedBody
                 text={
-                  "Figma, Framer, FigJam, Adobe XD, ProtoPie, Adobe Photoshop, UX Research, UI Design, Prototyping."
+                  "Postman, Docker, Kubernetes, Jira, Jenkins, Axure, Selenium  "
                 }
               />
             </div>

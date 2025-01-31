@@ -11,14 +11,14 @@ import { motion } from "framer-motion";
 const BlogCard = ({
   name,
   role,
-  company,
+  
   profileImg,
   testimonial,
   index,
 }: reviewProps) => {
   const abbreviateName = (name: string): string => {
     const [firstName, lastName] = name.split(" ");
-    return `${firstName} ${lastName[0]}.`;
+    return `${firstName} ${lastName}`;
   };
 
   return (
@@ -62,7 +62,7 @@ const BlogCard = ({
             {abbreviateName(name)}
           </h3>
           <p className="text-sm font-[500] leading-[16px] text-[#95979D]">
-            {role} @ {company}
+            {role} 
           </p>
         </div>
       </div>
