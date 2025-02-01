@@ -36,7 +36,7 @@ const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
           />
         </div>
 
-        <h3 className="mt-3 break-all uppercase leading-[1em] tracking-tight line-clamp-2">
+        <h3 className="mt-3 break-all uppercase leading-[1em] tracking-tight text-white line-clamp-2">
           {title}
         </h3>
       </div>
@@ -44,8 +44,7 @@ const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
       <div className="absolute bottom-0 mb-5 flex w-[90%] items-center justify-between text-[14px] font-bold text-[#95979D]">
         {available ? (
           <>
-            {" "}
-            <p>{date}</p>{" "}
+            <p>{date}</p>
             <Link
               href={url}
               target="_blank"

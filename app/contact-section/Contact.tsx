@@ -91,7 +91,7 @@ const Contact = () => {
               />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/victor-williams-chukwudi/"
+              href="https://www.linkedin.com/in/vikram-chouhan-467047210/"
               target="_blank"
               aria-label="View LinkedIn Profile"
             >

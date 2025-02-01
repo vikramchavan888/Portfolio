@@ -12,8 +12,7 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   title: "Vikram Chouhan — Fullstack Engineer",
-  description:
-    "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+  description: "Fullstack developer",
   generator: "Next.js",
   applicationName: "Vikram Chouhan",
   keywords: [
@@ -38,13 +37,12 @@ export const metadata: Metadata = {
   colorScheme: "dark",
   openGraph: {
     title: "Vikram Chouhan — Fullstack Engineer",
-    description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
-    url: "https://www.victorwilliams.me/",
-    siteName: "www.victorwilliams.me",
+    description: "Fullstack Engineer",
+    url: "https://vikram-portfolio-azure.vercel.app/",
+    siteName: "www.Vikramchouhan.com",
     images: [
       {
-        url: "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
+        url: "https://github.com/vikramchavan888/vikramchavan.com/blob/main/Assets/WhatsApp%20Image%202023-12-24%20at%201.32.16%20AM.jpeg?raw=true",
         width: 1200,
         height: 630,
         alt: "Vikram Chouhan — Fullstack Engineer",
@@ -55,13 +53,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "VVikram Chouhan — Fullstack Engineer",
-    description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+    title: "Vikram Chouhan — Fullstack Engineer",
+    description: "Fullstack Engineer",
     creator: "victorwill__",
     creatorId: "1243720976552144897",
     images: [
-      "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
+      "https://github.com/vikramchavan888/vikramchavan.com/blob/main/Assets/WhatsApp%20Image%202023-12-24%20at%201.32.16%20AM.jpeg?raw=true",
     ],
   },
   robots: {

@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faLink } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { ProjectProps } from "./projectDetails";
+import { faGlobe, faLink } from "@fortawesome/free-solid-svg-icons";
+//import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { CompanyProps } from "./companydetails";
 import Link from "next/link";
 import Image from "next/image";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedBody from "../animations/AnimatedBody";
 import { motion } from "framer-motion";
 
-const ProjectCard = ({
+const CompanyCard = ({
   id,
   name,
   description,
@@ -17,7 +17,7 @@ const ProjectCard = ({
   demo,
   image,
   available,
-}: ProjectProps) => {
+}: CompanyProps) => {
   return (
     <motion.div
       style={
@@ -48,7 +48,7 @@ const ProjectCard = ({
         {available ? (
           <>
             <Link
-              href=""
+              href={github}
               target="_blank"
               className="rounded-full"
               aria-label="Open GitHub Repository"
@@ -63,13 +63,9 @@ const ProjectCard = ({
                 data-blobity-magnetic="true"
               />
             </Link>
-            <Link
-              href="https://www.persistent.com/"
-              target="_blank"
-              aria-label="Open Live Demo"
-            >
+            <Link href={demo} target="_blank" aria-label="Open Live Demo">
               <FontAwesomeIcon
-                icon={faGithub}
+                icon={faGlobe}
                 className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
                 data-blobity
                 data-blobity-radius="38"
@@ -88,7 +84,7 @@ const ProjectCard = ({
               aria-label="Open GitHub Repository"
             >
               <FontAwesomeIcon
-                icon={faGithub}
+                icon={faGlobe}
                 className=" w-[20px]  rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
                 data-blobity
                 data-blobity-radius="38"
@@ -113,17 +109,18 @@ const ProjectCard = ({
         } mb-10  md:mb-16 lg:mb-14 `}
       >
         <AnimatedTitle
-          text={name}
+          text={"Persistent System"}
           className={
             "max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none"
           }
           wordSpace={"mr-[0.25em]"}
           charSpace={"-mr-[0.01em]"}
         />
+
         <AnimatedBody
           text={description}
           className={
-            "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
+            "mt-4 w-[90%] max-w-[457px] text-[14px] font-semibold text-[#95979D] "
           }
         />
         <div className="mt-9 flex gap-4">
@@ -144,4 +141,4 @@ const ProjectCard = ({
   );
 };
 
-export default ProjectCard;
+export default CompanyCard;

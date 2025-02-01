@@ -55,37 +55,38 @@ export default function AnimatedTitle({
   };
 
   return (
-    <h2 aria-label={text} role="heading" className={className}>
-      {text.split(" ").map((word, index) => {
-        return (
+   
+  <h2 aria-label={text} role="heading" className={className}>
+    {text.split(" ").map((word, wordIndex) => (
+      <motion.span
+        ref={ref}
+        aria-hidden="true"
+        key={`word-${wordIndex}`}
+        initial="hidden"
+        animate={ctrls}
+        variants={wordAnimation}
+        transition={{
+          delayChildren: wordIndex * 0.25,
+          staggerChildren: 0.05,
+        }}
+        className={`inline-block whitespace-nowrap ${wordSpace}`}
+      >
+        {word.split("").map((character, charIndex) => (
           <motion.span
-            ref={ref}
             aria-hidden="true"
-            key={index}
-            initial="hidden"
-            animate={ctrls}
-            variants={wordAnimation}
-            transition={{
-              delayChildren: index * 0.25,
-              staggerChildren: 0.05,
-            }}
-            className={`inline-block whitespace-nowrap ${wordSpace}`}
+            key={`char-${wordIndex}-${charIndex}`}
+            variants={characterAnimation}
+            className={`inline-block ${charSpace}`}
           >
-            {word.split("").map((character, index) => {
-              return (
-                <motion.span
-                  aria-hidden="true"
-                  key={index}
-                  variants={characterAnimation}
-                  className={`inline-block ${charSpace}`}
-                >
-                  {character}
-                </motion.span>
-              );
-            })}
+            {character}
           </motion.span>
-        );
-      })}
-    </h2>
-  );
+        ))}
+        {/* Add a space after each word except the last one */}
+        {wordIndex < text.split(" ").length - 1 && <span className="inline-block">{'\u00A0'}</span>}
+      </motion.span>
+    ))}
+  </h2>
+);
+
+  
 }
