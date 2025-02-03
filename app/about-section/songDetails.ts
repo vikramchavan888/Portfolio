@@ -55,6 +55,12 @@ export const songs = [
     link: "https://www.hackerrank.com/certificates/4d6cd41c0be4",
   },
   {
+    title: "DATA Analatics",
+    artist: "Linkedin",
+    image: require(".//../../public/songs/dataA.jpg"),
+    link: "https://www.linkedin.com/learning/certificates/cb176ec6da2895985e251310c368a2ab1353287367be0534a6092c0b1633180b?trk=share_certificate",
+  },
+  {
     title: "SQL A",
     artist: "hackerrank",
     image: require(".//../../public/songs/sqlA.png"),

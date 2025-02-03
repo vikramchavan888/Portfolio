@@ -18,7 +18,7 @@ export const Companyprojects = [
     technologies: ["Java" ,"React", "Spring", "Web3","Nodejs"],
     github: "https://vikramchavan888.github.io/persistent.com/",
     demo: "https://www.persistent.com/",
-    image: require(".//../../public/projects/odunsi.png"),
+    image: require(".//../../public/projects/1712467249144.jpg"),
     available: true,
   },
 ];

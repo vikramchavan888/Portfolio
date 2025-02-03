@@ -48,7 +48,7 @@ const ProjectCard = ({
         {available ? (
           <>
             <Link
-              href=""
+              href={github}
               target="_blank"
               className="rounded-full"
               aria-label="Open GitHub Repository"
@@ -64,7 +64,7 @@ const ProjectCard = ({
               />
             </Link>
             <Link
-              href="https://www.persistent.com/"
+              href={demo}
               target="_blank"
               aria-label="Open Live Demo"
             >
@@ -82,7 +82,7 @@ const ProjectCard = ({
         ) : (
           <div className=" flex items-center justify-center gap-4">
             <Link
-              href=""
+              href={github}
               target="_blank"
               className="mt-1 rounded-full"
               aria-label="Open GitHub Repository"
