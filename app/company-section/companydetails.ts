@@ -15,7 +15,7 @@ export const Companyprojects = [
     name: "Persistent System",
     description:
       "Utilized Generative AI for threat detection, predictive modeling, and attack simulations in Checkmarx SAST; applied NLP for security log analysis; developed a blockchain miner for PolygonID.",
-    technologies: ["Java" ,"React", "Spring", "Web3","Nodejs"],
+    technologies: ["Java" ,"React", "Spring", "Web3"],
     github: "https://vikramchavan888.github.io/persistent.com/",
     demo: "https://www.persistent.com/",
     image: require(".//../../public/projects/1712467249144.jpg"),
