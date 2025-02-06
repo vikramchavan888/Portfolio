@@ -48,7 +48,7 @@ const ProjectCard = ({
         {available ? (
           <>
             <Link
-              href={github}
+              href={demo}
               target="_blank"
               className="rounded-full"
               aria-label="Open GitHub Repository"
@@ -63,11 +63,7 @@ const ProjectCard = ({
                 data-blobity-magnetic="true"
               />
             </Link>
-            <Link
-              href={demo}
-              target="_blank"
-              aria-label="Open Live Demo"
-            >
+            <Link href={github} target="_blank" aria-label="Open Live Demo">
               <FontAwesomeIcon
                 icon={faGithub}
                 className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
